@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Receptionist.css">
+    <title>Receptionist Dashboard</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Receptionist Dashboard</h1>
+        <form action="Connect.php" method="post">
+        <form id="receptionist-form">
+            <label for="patient_name">Patient's Name:</label>
+            <input type="text" id="patient_name" name="patient_name" required>
+
+            <label for="token_number">Token Number:</label>
+            <input type="number" id="token_number" name="token_number" required>
+
+            <label for="doctor_name">Doctor's Name:</label>
+            <select id="doctor_name" name="doctor_name" required>
+                <option value="Dr. Smith">Dr. Smith</option>
+                <option value="Dr. Jones">Dr. Jones</option>
+                <option value="Dr. Shweta Tiwari">Dr. Shweta Tiwari</option>
+                <option value="Dr. Sagar Madankar">Dr. Sagar Madankar</option>
+                <option value="Dr. Anmol Singh">Dr. Anmol Singh</option>
+                <option value="Dr. Jack Grayson">Dr. Jack Grayson</option>
+                <option value="Dr. Noah Wallance">Dr. Noah Wallance</option>
+                <option value="Dr. Mason Taylor">Dr. Mason Taylor</option>
+                <option value="Dr. Abhay Desai">Dr. Abhay Desai</option>
+                <option value="Dr. Nimrit Kaur">Dr. Nimrit Kaur</option>
+                
+
+                <!-- Add more doctors as needed -->
+            </select>
+
+            <label for="appointment_time">Appointment Date and Time:</label>
+            <input type="datetime-local" id="appointment_time" name="appointment_time" required>
+
+            <button type="submit">Book Appointment</button>
+            <div id="appointment-message" class="message"></div>
+        </form>
+        </form>
+    </div>
+    <script src="js/receptionist.js"></script>
+</body>
+</html>

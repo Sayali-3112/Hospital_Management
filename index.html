@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Management System</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <img src="assets/images/smart_hospital.jpeg" alt="Hospital Logo" class="logo">
+
+
+        <h1>Welcome to the Hospital Management System</h1>
+
+
+        <p>Choose your portal below to log in and manage hospital services efficiently.</p>
+        <div class="login-section">
+            <div class="portal-card">
+                <h2>Doctor Portal</h2>
+                <p>Manage your availability and update patient details.</p>
+                <button onclick="navigateToPortal('doctor')">PORTAL 1</button>
+                <a href="doctor/dashboard2.html">Doctor's Login</a>
+            </div>
+
+
+            <div class="portal-card">
+                <h2>Receptionist Portal</h2>
+                <p>Book patient appointments and manage schedules.</p>
+                <button onclick="navigateToPortal('receptionist')">PORTAL 2</button>
+                <a href="receptionist/dashboard3.html">Receptionist's Login</a>
+            </div>
+
+            
+            <div class="portal-card">
+                <h2>Display System</h2>
+                <p>View real-time doctor availability and appointment status.</p>
+                <button onclick="navigateToPortal('display')">PORTAL 3</button>
+                <a href="displaysystem/MAINCONNECT.php">Display System</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript to handle portal selection and redirection -->
+    <script src="js/app.js"></script>
+
+</body>
+</html>

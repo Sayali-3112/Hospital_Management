@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="dashboard1" content="10"> 
+    <link rel="stylesheet" href="DOCTOR.css">
+    <title>Doctor Dashboard</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Doctor Dashboard</h1>
+        <form action="connect.php" method="post">
+        <form id="doctor-form">
+
+            <label for="doctor_name">Doctor's Name:</label>
+            <input type="text" id="doctor_name" name="doctor_name" placeholder="Enter your name">
+
+        
+            <label for="status">Status:</label>
+            <select id="status" name="status">
+                <option value="Free">Free</option>
+                <option value="Busy">Busy</option>
+            </select>
+            
+
+            <label for="patient_name">Patient's Name:</label>
+            <input type="text" id="patient_name" name="patient_name" placeholder="Enter if busy">
+
+            <label for="token_number">Token Number:</label>
+            <input type="number" id="token_number" name="token_number" placeholder="Enter if busy">
+
+            <label for="availability_time">Estimated Availability:</label>
+            <input type="time" id="availability_time" name="availability_time">
+
+            <button type="submit">Update Status</button>
+            <div id="message" class="message"></div>
+        </form>
+        </form>
+    </div>
+    <script src="js/doctor.js"></script>
+</body>
+</html>
